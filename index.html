@@ -171,7 +171,55 @@ h1.hero-name .accent{color:var(--accent);}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 footer.page-footer{margin-top:4rem;border-top:1px solid var(--border);padding-top:1.4rem;display:flex;justify-content:space-between;align-items:center;}
 .footer-text{font-family:var(--font-mono);font-size:.62rem;color:var(--muted);letter-spacing:.04em;}
-@media(max-width:768px){body{flex-direction:column;overflow:auto;}.sidebar{width:100%;height:auto;flex-direction:row;flex-wrap:wrap;padding:1rem;}.main{height:auto;overflow:visible;}.page{position:relative;inset:auto;overflow-y:visible;padding:2.5rem 1.5rem;}.about-grid,.skills-cols{grid-template-columns:1fr;gap:1.5rem;}.orbit-wrap{display:none;}}
+@media(max-width:768px){
+  body{flex-direction:column;overflow:auto;overflow-x:hidden;cursor:auto;}
+  .cursor,.cursor-ring{display:none;}
+  .sidebar{width:100%;height:auto;flex-direction:column;padding:1rem 1.25rem;border-right:none;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
+  .profile{flex-direction:row;text-align:left;align-items:center;padding-bottom:0;border-bottom:none;margin-bottom:.75rem;gap:.75rem;}
+  .avatar-wrap{width:38px;height:38px;margin-bottom:0;flex-shrink:0;}
+  .avatar-placeholder{font-size:.9rem;}
+  .profile-name{font-size:.82rem;}
+  .profile-role{font-size:.55rem;}
+  .sidebar-nav{flex:none;display:flex;flex-direction:row;flex-wrap:wrap;gap:.3rem;overflow-x:auto;padding-bottom:.25rem;}
+  .nav-section-label{display:none;}
+  .nav-link{display:inline-flex;width:auto;padding:.4rem .75rem;font-size:.72rem;border-radius:999px;margin-bottom:0;margin-right:.3rem;border:1px solid var(--border);}
+  .nav-link.active{border-color:var(--accent);}
+  .social-link,.cv-btn{display:none;}
+  .main{height:auto;overflow:visible;}
+  .page{position:relative;inset:auto;overflow-y:visible;padding:2rem 1.25rem;opacity:1;pointer-events:all;transform:none;transition:none;display:none;}
+  .page.active{display:block;}
+  .hero-inner{flex-direction:column;gap:2rem;min-height:auto;padding-top:1rem;}
+  .hero-text{min-width:unset;}
+  h1.hero-name{font-size:clamp(2.8rem,12vw,4.5rem);}
+  .orbit-wrap{display:none;}
+  .hero-btns{gap:.6rem;}
+  .btn-primary,.btn-outline{padding:.7rem 1.2rem;font-size:.68rem;}
+  h1.page-title{font-size:clamp(2rem,8vw,2.8rem);margin-bottom:1.5rem;}
+  .about-grid{grid-template-columns:1fr;gap:2rem;}
+  .about-stats{grid-template-columns:1fr 1fr;gap:.75rem;}
+  .stat-card{padding:1rem;}
+  .stat-num{font-size:1.5rem;}
+  .skills-cols{grid-template-columns:1fr;gap:1.5rem;}
+  .tech-icon{width:48px;height:48px;border-radius:12px;}
+  .tech-icon svg{width:22px;height:22px;}
+  .project-row{flex-wrap:wrap;gap:1rem;padding:1rem 0;}
+  .proj-thumb{width:60px;height:48px;font-size:1.3rem;}
+  .proj-title{font-size:.9rem;}
+  .proj-desc{font-size:.74rem;}
+  #page-project-detail .back-btn{margin-bottom:1.5rem;}
+  .detail-desc{font-size:.85rem;}
+  .detail-features ul li{font-size:.8rem;}
+  .detail-btns{flex-direction:column;gap:.75rem;}
+  .detail-btn-demo,.detail-btn-code{justify-content:center;}
+  .article-card{flex-wrap:wrap;gap:1rem;padding:1.25rem;}
+  .article-date{min-width:unset;}
+  #page-contact{min-height:auto;padding-top:1rem;}
+  .contact-email{font-size:1.3rem;}
+  .contact-socials{gap:.5rem;}
+  .contact-social-btn{padding:.45rem .8rem;font-size:.62rem;}
+  .contact-form{margin-top:1.5rem;}
+  footer.page-footer{flex-direction:column;gap:.5rem;text-align:center;}
+}
 </style>
 </head>
 <body>
@@ -249,7 +297,7 @@ footer.page-footer{margin-top:4rem;border-top:1px solid var(--border);padding-to
     <div class="about-stats">
       <div class="stat-card"><div class="stat-num">AI</div><div class="stat-label">Major Focus</div></div>
       <div class="stat-card"><div class="stat-num">BS</div><div class="stat-label">Degree</div></div>
-      <div class="stat-card"><div class="stat-num">6+</div><div class="stat-label">Projects</div></div>
+      <div class="stat-card"><div class="stat-num">7+</div><div class="stat-label">Projects</div></div>
       <div class="stat-card"><div class="stat-num">01</div><div class="stat-label">Mission</div></div>
     </div>
   </div>
@@ -308,16 +356,27 @@ footer.page-footer{margin-top:4rem;border-top:1px solid var(--border);padding-to
       <div class="tech-icon" style="background:#ee4c2c"><svg viewBox="0 0 128 128"><path d="M64 10L32 42l8 8 6-6v28c0 9.9 8.1 18 18 18s18-8.1 18-18V44l6 6 8-8L64 10zm0 68c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z" fill="#fff"/></svg><span>PyTorch</span></div>
       <div class="tech-icon" style="background:#5c3ee8"><svg viewBox="0 0 128 128"><circle cx="42" cy="44" r="18" fill="none" stroke="#fff" stroke-width="10"/><circle cx="86" cy="44" r="18" fill="none" stroke="#fff" stroke-width="10"/><circle cx="64" cy="82" r="18" fill="none" stroke="#fff" stroke-width="10"/></svg><span>OpenCV</span></div>
       <div class="tech-icon" style="background:#336791"><svg viewBox="0 0 128 128"><ellipse cx="64" cy="30" rx="40" ry="16" fill="none" stroke="#fff" stroke-width="8"/><path d="M24 30v68c0 9 18 16 40 16s40-7 40-16V30" fill="none" stroke="#fff" stroke-width="8"/><path d="M24 64c0 9 18 16 40 16s40-7 40-16" fill="none" stroke="#fff" stroke-width="6"/></svg><span>SQL</span></div>
+      <div class="tech-icon" style="background:#f7931e"><svg viewBox="0 0 128 128"><ellipse cx="64" cy="64" rx="42" ry="26" fill="none" stroke="#fff" stroke-width="9"/><ellipse cx="64" cy="64" rx="42" ry="26" fill="none" stroke="#fff" stroke-width="9" transform="rotate(60 64 64)"/><ellipse cx="64" cy="64" rx="42" ry="26" fill="none" stroke="#fff" stroke-width="9" transform="rotate(120 64 64)"/><circle cx="64" cy="64" r="8" fill="#fff"/></svg><span>Sklearn</span></div>
       <div class="tech-icon" style="background:#150458"><svg viewBox="0 0 128 128"><rect x="30" y="20" width="16" height="88" rx="8" fill="#e70488"/><rect x="82" y="20" width="16" height="88" rx="8" fill="#e70488"/><rect x="30" y="45" width="68" height="15" rx="4" fill="#fff" opacity=".85"/><rect x="30" y="68" width="68" height="15" rx="4" fill="#fff" opacity=".85"/></svg><span>Pandas</span></div>
       <div class="tech-icon" style="background:#013243"><svg viewBox="0 0 128 128"><path d="M64 18L18 42v44l46 24 46-24V42L64 18zm0 12l34 18-34 18-34-18 34-18zM28 52l30 16v30L28 82V52zm72 0v30L70 98V68l30-16z" fill="#fff"/></svg><span>NumPy</span></div>
       <div class="tech-icon" style="background:#ff4b4b"><svg viewBox="0 0 128 128"><path d="M20 80 Q40 50 64 65 Q88 80 108 48" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M28 100 Q50 68 74 83 Q98 98 112 68" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" opacity=".7"/></svg><span>Streamlit</span></div>
       <div class="tech-icon" style="background:#3d4f7c"><svg viewBox="0 0 128 128"><path d="M20 90 L64 30 L108 90 Z" fill="none" stroke="#fff" stroke-width="8"/><circle cx="64" cy="30" r="6" fill="#fff"/><circle cx="20" cy="90" r="6" fill="#fff"/><circle cx="108" cy="90" r="6" fill="#fff"/><line x1="64" y1="30" x2="64" y2="90" stroke="#fff" stroke-width="4" opacity=".5"/></svg><span>Plotly</span></div>
-      <div class="tech-icon" style="background:#ffd21e"><svg viewBox="0 0 128 128"><circle cx="64" cy="60" r="42" fill="#fff" opacity=".15"/><ellipse cx="48" cy="52" rx="7" ry="9" fill="#1a1a2e"/><ellipse cx="80" cy="52" rx="7" ry="9" fill="#1a1a2e"/><path d="M44 74 Q64 90 84 74" stroke="#1a1a2e" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="36" cy="68" r="7" fill="#ff9b9b" opacity=".7"/><circle cx="92" cy="68" r="7" fill="#ff9b9b" opacity=".7"/></svg><span>HuggingFace</span></div>
       <div class="tech-icon" style="background:#f05032"><svg viewBox="0 0 128 128"><path d="M119.83 58.63L69.37 8.17a11.66 11.66 0 00-16.5 0l-10.96 10.96 13.9 13.9a13.85 13.85 0 0117.5 17.63l13.4 13.4a13.85 13.85 0 11-8.3 8.11L65.95 59.71v34.1a13.85 13.85 0 11-11.38-.44V58.7a13.85 13.85 0 01-7.52-18.17L33.2 26.65 8.17 51.68a11.66 11.66 0 000 16.5l50.46 50.46a11.66 11.66 0 0016.5 0l44.7-44.7a11.66 11.66 0 000-16.31z" fill="#fff"/></svg><span>Git</span></div>
     </div>
   </div>
   <div class="proj-section-label">What I have been working on <span>⚡</span></div>
   <div class="project-list stagger">
+
+    <!-- CLAIM FRAUD DETECTOR — NEW -->
+    <div class="project-row" onclick="openProject('fraud')">
+      <div class="proj-thumb">🔍</div>
+      <div class="proj-info">
+        <div class="proj-title">Insurance Claim Fraud Detector</div>
+        <div class="proj-desc">End-to-end ML system — Random Forest scores insurance claims and automatically triggers Camunda BPMN workflows routing to Reject, Manual Review, or Approve.</div>
+        <div class="proj-tags"><span class="tag tag-red">RANDOM FOREST</span><span class="tag tag-blue">CAMUNDA</span><span class="tag tag-green">FASTAPI</span><span class="tag tag-orange">SKLEARN</span><span class="tag tag-purple">BPMN</span></div>
+      </div>
+      <span class="proj-arrow">→</span>
+    </div>
 
     <div class="project-row" onclick="openProject('taskapi')">
       <div class="proj-thumb">⚡</div>
@@ -438,6 +497,23 @@ document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style
 (function ar(){rx+=(mx-rx)*.13;ry+=(my-ry)*.13;ring.style.left=rx-14+'px';ring.style.top=ry-14+'px';requestAnimationFrame(ar);})();
 
 const projects={
+  fraud:{
+    title:"Insurance Claim Fraud Detector",
+    date:"Apr 2026 · scikit-learn · FastAPI · Camunda",
+    tags:['<span class="tag tag-red">RANDOM FOREST</span>','<span class="tag tag-blue">CAMUNDA BPMN</span>','<span class="tag tag-green">FASTAPI</span>','<span class="tag tag-orange">SKLEARN</span>','<span class="tag tag-purple">PYTHON</span>','<span class="tag tag-cyan">REST API</span>'],
+    desc:`An end-to-end <span>insurance claim fraud detection system</span> that combines a trained Random Forest ML model with Camunda Cloud BPMN process automation. Claims are scored by the model and automatically routed via REST API to one of three outcomes: <span>Reject, Manual Review, or Approve</span>.`,
+    features:[
+      "Random Forest classifier trained on insurance claim features with fraud labels",
+      "FastAPI backend serves the model as a REST endpoint for real-time scoring",
+      "Camunda Cloud integration — ML score triggers BPMN process instance via REST",
+      "Automated decision routing: high risk → Reject, medium → Manual Review, low → Approve",
+      "End-to-end pipeline from raw claim data to automated workflow decision",
+      "Demonstrates ML + business process automation in a single system"
+    ],
+    github:"https://github.com/JazibAslam124/claim-fraud-detector",
+    demo:null,
+    screenshot:null
+  },
   taskapi:{
     title:"Task Manager REST API",
     date:"Apr 2026 · FastAPI · SQLAlchemy · SQLite",

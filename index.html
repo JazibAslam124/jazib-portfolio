@@ -512,7 +512,8 @@ const projects={
     ],
     github:"https://github.com/JazibAslam124/claim-fraud-detector",
     demo:"https://claim-fraud-detector-rdp9pspmu5n4fzy38j3kad.streamlit.app/",
-    screenshot:null
+    screenshot:null,
+    video:"0411.mp4"
   },
   taskapi:{
     title:"Task Manager REST API",
@@ -620,9 +621,11 @@ function openProject(id){
   const demoBtn=p.demo
     ?`<a href="${p.demo}" target="_blank" class="detail-btn-demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo</a>`
     :`<span class="detail-btn-demo" style="opacity:.4;cursor:default">Live Demo (coming soon)</span>`;
-  const screenshotHtml=p.screenshot
-    ?`<div class="detail-screenshot"><img src="${p.screenshot}" alt="${p.title} screenshot"/></div>`
-    :`<div class="detail-screenshot-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a2535" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Add a screenshot — drop an image here</span></div>`;
+const screenshotHtml=p.video
+  ?`<div class="detail-screenshot"><video src="${p.video}" controls autoplay muted loop style="width:100%;display:block;"></video></div>`
+  :p.screenshot
+  ?`<div class="detail-screenshot"><img src="${p.screenshot}" alt="${p.title} screenshot"/></div>`
+  :`<div class="detail-screenshot-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a2535" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Add a screenshot — drop an image here</span></div>`;
   document.getElementById('detail-content').innerHTML=`
     <div class="page-eyebrow">Project</div>
     <h1 class="page-title" style="margin-bottom:1rem;">${p.title}</h1>

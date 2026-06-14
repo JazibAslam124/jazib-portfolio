@@ -661,6 +661,625 @@
 <!--</body>-->
 <!--</html>-->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<meta charset="UTF-8"/>-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+<!--<title>Jazib Aslam — BSAI Student</title>-->
+<!--<link rel="preconnect" href="https://fonts.googleapis.com"/>-->
+<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>-->
+<!--<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>-->
+<!--<style>-->
+<!--:root{&#45;&#45;bg:#080c10;&#45;&#45;bg2:#0d1117;&#45;&#45;sidebar:#0b0f14;&#45;&#45;surface:#111822;&#45;&#45;border:#1a2535;&#45;&#45;accent:#00d4ff;&#45;&#45;accent2:#7b5ea7;&#45;&#45;text:#e8edf2;&#45;&#45;muted:#4a6880;&#45;&#45;dim:#1e2c3a;&#45;&#45;font-display:'Syne',sans-serif;&#45;&#45;font-mono:'DM Mono',monospace;&#45;&#45;font-body:'DM Sans',sans-serif;&#45;&#45;sidebar-w:260px;}-->
+<!--*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}-->
+<!--html,body{height:100%;}-->
+<!--body{background:var(&#45;&#45;bg);color:var(&#45;&#45;text);font-family:var(&#45;&#45;font-body);font-weight:300;display:flex;overflow:hidden;cursor:none;}-->
+<!--body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:200;opacity:.4;}-->
+<!--.cursor{width:8px;height:8px;background:var(&#45;&#45;accent);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;mix-blend-mode:screen;transition:transform .15s;}-->
+<!--.cursor-ring{width:28px;height:28px;border:1px solid var(&#45;&#45;accent);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;opacity:.35;}-->
+<!--.sidebar{width:var(&#45;&#45;sidebar-w);height:100vh;background:var(&#45;&#45;sidebar);border-right:1px solid var(&#45;&#45;border);flex-shrink:0;display:flex;flex-direction:column;padding:2rem 1.5rem;overflow-y:auto;}-->
+<!--.profile{display:flex;flex-direction:column;align-items:center;text-align:center;padding-bottom:1.75rem;border-bottom:1px solid var(&#45;&#45;border);margin-bottom:1.75rem;}-->
+<!--.avatar-wrap{width:76px;height:76px;border-radius:50%;border:2px solid var(&#45;&#45;accent);overflow:hidden;margin-bottom:0.9rem;box-shadow:0 0 18px rgba(0,212,255,0.15);}-->
+<!--.avatar-placeholder{width:100%;height:100%;background:var(&#45;&#45;surface);display:flex;align-items:center;justify-content:center;font-family:var(&#45;&#45;font-display);font-weight:800;font-size:1.5rem;color:var(&#45;&#45;accent);}-->
+<!--.profile-name{font-family:var(&#45;&#45;font-display);font-weight:800;font-size:0.95rem;letter-spacing:-.02em;margin-bottom:.2rem;}-->
+<!--.profile-role{font-family:var(&#45;&#45;font-mono);font-size:.6rem;color:var(&#45;&#45;muted);letter-spacing:.08em;text-transform:uppercase;}-->
+<!--.sidebar-nav{flex:1;}-->
+<!--.nav-section-label{font-family:var(&#45;&#45;font-mono);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(&#45;&#45;muted);padding:0 .5rem;margin-bottom:.4rem;margin-top:1.25rem;}-->
+<!--.nav-section-label:first-child{margin-top:0;}-->
+<!--.nav-link{display:flex;align-items:center;gap:.7rem;padding:.55rem .7rem;color:var(&#45;&#45;muted);text-decoration:none;font-family:var(&#45;&#45;font-body);font-size:.85rem;font-weight:400;border-radius:6px;transition:background .2s,color .2s;margin-bottom:.1rem;cursor:none;border:none;background:none;width:100%;text-align:left;}-->
+<!--.nav-link:hover,.nav-link.active{background:var(&#45;&#45;surface);color:var(&#45;&#45;text);}-->
+<!--.nav-link.active{color:var(&#45;&#45;accent);}-->
+<!--.nav-icon{width:15px;height:15px;opacity:.6;flex-shrink:0;}-->
+<!--.nav-link:hover .nav-icon,.nav-link.active .nav-icon{opacity:1;}-->
+<!--.social-link{display:flex;align-items:center;gap:.7rem;padding:.45rem .7rem;color:var(&#45;&#45;muted);text-decoration:none;font-family:var(&#45;&#45;font-mono);font-size:.72rem;border-radius:6px;transition:color .2s,background .2s;margin-bottom:.1rem;cursor:none;}-->
+<!--.social-link:hover{background:var(&#45;&#45;surface);color:var(&#45;&#45;accent);}-->
+<!--.cv-btn{display:flex;align-items:center;justify-content:center;gap:.55rem;width:100%;padding:.7rem 1rem;background:transparent;border:1px solid var(&#45;&#45;border);color:var(&#45;&#45;text);font-family:var(&#45;&#45;font-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:none;transition:border-color .3s,background .3s,color .3s;margin-top:1.5rem;border-radius:6px;}-->
+<!--.cv-btn:hover{border-color:var(&#45;&#45;accent);background:rgba(0,212,255,.05);color:var(&#45;&#45;accent);}-->
+<!--.main{flex:1;height:100vh;overflow:hidden;position:relative;}-->
+<!--.page{position:absolute;inset:0;overflow-y:auto;padding:4rem 4.5rem;opacity:0;pointer-events:none;transform:translateX(18px);transition:opacity .35s cubic-bezier(.22,1,.36,1),transform .35s cubic-bezier(.22,1,.36,1);}-->
+<!--.page.active{opacity:1;pointer-events:all;transform:translateX(0);}-->
+<!--.page-eyebrow{font-family:var(&#45;&#45;font-mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(&#45;&#45;accent);margin-bottom:.6rem;display:flex;align-items:center;gap:.7rem;}-->
+<!--.page-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(&#45;&#45;accent);}-->
+<!--h1.page-title{font-family:var(&#45;&#45;font-display);font-weight:800;font-size:clamp(2.2rem,4vw,3.4rem);letter-spacing:-.04em;line-height:.95;margin-bottom:2.75rem;}-->
+<!--#page-home{justify-content:center;display:flex;flex-direction:column;}-->
+<!--.hero-grid-bg{position:fixed;inset:0;background-image:linear-gradient(var(&#45;&#45;dim) 1px,transparent 1px),linear-gradient(90deg,var(&#45;&#45;dim) 1px,transparent 1px);background-size:55px 55px;opacity:.3;mask-image:radial-gradient(ellipse 70% 70% at 40% 50%,black 0%,transparent 100%);pointer-events:none;z-index:0;}-->
+<!--.hero-inner{position:relative;z-index:2;display:flex;align-items:center;gap:3.5rem;flex-wrap:wrap;min-height:80vh;}-->
+<!--.hero-text{flex:1;min-width:260px;display:flex;flex-direction:column;justify-content:center;}-->
+<!--.hero-tag{font-family:var(&#45;&#45;font-mono);font-size:.7rem;color:var(&#45;&#45;accent);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.1rem;display:flex;align-items:center;gap:.7rem;}-->
+<!--.hero-tag::before{content:'';display:block;width:26px;height:1px;background:var(&#45;&#45;accent);}-->
+<!--h1.hero-name{font-family:var(&#45;&#45;font-display);font-weight:800;font-size:clamp(3rem,6vw,5.5rem);line-height:.92;letter-spacing:-.04em;margin-bottom:1.1rem;}-->
+<!--h1.hero-name .accent{color:var(&#45;&#45;accent);}-->
+<!--.hero-sub{font-family:var(&#45;&#45;font-mono);font-size:.85rem;color:var(&#45;&#45;muted);margin-bottom:2.25rem;line-height:1.7;}-->
+<!--.hero-sub span{color:var(&#45;&#45;text);}-->
+<!--.hero-btns{display:flex;gap:.9rem;flex-wrap:wrap;}-->
+<!--.btn-primary{font-family:var(&#45;&#45;font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(&#45;&#45;bg);background:var(&#45;&#45;accent);border:none;padding:.8rem 1.8rem;cursor:none;text-decoration:none;transition:box-shadow .3s,transform .2s;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);}-->
+<!--.btn-primary:hover{box-shadow:0 0 28px rgba(0,212,255,.45);transform:translateY(-2px);}-->
+<!--.btn-outline{font-family:var(&#45;&#45;font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(&#45;&#45;text);background:transparent;border:1px solid var(&#45;&#45;border);padding:.8rem 1.8rem;cursor:none;text-decoration:none;transition:border-color .3s,color .3s;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);}-->
+<!--.btn-outline:hover{border-color:var(&#45;&#45;accent);color:var(&#45;&#45;accent);}-->
+<!--.orbit-wrap{width:280px;height:280px;position:relative;flex-shrink:0;}-->
+<!--.orbit-ring{position:absolute;inset:0;border:1px dashed var(&#45;&#45;dim);border-radius:50%;animation:spin 20s linear infinite;}-->
+<!--.orbit-ring-2{position:absolute;inset:38px;border:1px dashed rgba(0,212,255,.12);border-radius:50%;animation:spin 13s linear infinite reverse;}-->
+<!--.orbit-dot{position:absolute;width:7px;height:7px;background:var(&#45;&#45;accent);border-radius:50%;box-shadow:0 0 10px var(&#45;&#45;accent);}-->
+<!--.orbit-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(&#45;&#45;font-display);font-weight:800;font-size:1.3rem;color:var(&#45;&#45;accent);}-->
+<!--.orbit-label{position:absolute;font-family:var(&#45;&#45;font-mono);font-size:.6rem;color:var(&#45;&#45;muted);white-space:nowrap;}-->
+<!--@keyframes spin{to{transform:rotate(360deg);}}-->
+<!--.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start;}-->
+<!--.about-text p{color:var(&#45;&#45;muted);font-size:.92rem;line-height:1.85;margin-bottom:1.1rem;}-->
+<!--.about-text p span{color:var(&#45;&#45;text);}-->
+<!--.learning-strip{margin-top:2rem;border:1px solid var(&#45;&#45;border);padding:1.1rem 1.25rem;display:flex;align-items:flex-start;gap:.9rem;}-->
+<!--.learning-tag{font-family:var(&#45;&#45;font-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(&#45;&#45;accent);background:rgba(0,212,255,.06);border:1px solid rgba(0,212,255,.2);padding:.22rem .55rem;white-space:nowrap;margin-top:.1rem;}-->
+<!--.learning-items{display:flex;flex-wrap:wrap;gap:.45rem;}-->
+<!--.learning-item{font-family:var(&#45;&#45;font-mono);font-size:.68rem;color:var(&#45;&#45;muted);border:1px solid var(&#45;&#45;border);padding:.25rem .65rem;transition:color .2s,border-color .2s;}-->
+<!--.learning-item:hover{color:var(&#45;&#45;text);border-color:var(&#45;&#45;muted);}-->
+<!--.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}-->
+<!--.stat-card{border:1px solid var(&#45;&#45;border);padding:1.5rem;position:relative;overflow:hidden;transition:border-color .3s;}-->
+<!--.stat-card::before{content:'';position:absolute;top:0;left:0;width:2px;height:0;background:var(&#45;&#45;accent);transition:height .4s;}-->
+<!--.stat-card:hover{border-color:var(&#45;&#45;accent);}-->
+<!--.stat-card:hover::before{height:100%;}-->
+<!--.stat-num{font-family:var(&#45;&#45;font-display);font-weight:800;font-size:2rem;color:var(&#45;&#45;accent);line-height:1;margin-bottom:.35rem;}-->
+<!--.stat-label{font-family:var(&#45;&#45;font-mono);font-size:.62rem;color:var(&#45;&#45;muted);letter-spacing:.1em;text-transform:uppercase;}-->
+<!--.skills-cols{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:2.75rem;}-->
+<!--.skill-group-title{font-family:var(&#45;&#45;font-display);font-weight:700;font-size:.95rem;color:var(&#45;&#45;muted);letter-spacing:-.01em;margin-bottom:.9rem;}-->
+<!--.skills-list{display:flex;flex-direction:column;gap:.45rem;}-->
+<!--.skill-pill{border:1px solid var(&#45;&#45;border);padding:.7rem .95rem;display:flex;align-items:center;gap:.7rem;transition:background .25s,border-color .25s,transform .2s;cursor:default;}-->
+<!--.skill-pill:hover{background:var(&#45;&#45;surface);border-color:var(&#45;&#45;accent);transform:translateX(5px);}-->
+<!--.skill-dot{width:5px;height:5px;border-radius:50%;background:var(&#45;&#45;accent);flex-shrink:0;}-->
+<!--.skill-dot.purple{background:var(&#45;&#45;accent2);}-->
+<!--.skill-name{font-family:var(&#45;&#45;font-mono);font-size:.75rem;color:var(&#45;&#45;text);}-->
+<!--.ai-tools-section{border-top:1px solid var(&#45;&#45;border);padding-top:1.75rem;}-->
+<!--.ai-tools-grid{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:.9rem;}-->
+<!--.ai-tool{font-family:var(&#45;&#45;font-mono);font-size:.67rem;color:var(&#45;&#45;accent2);background:rgba(123,94,167,.07);border:1px solid rgba(123,94,167,.2);padding:.3rem .8rem;letter-spacing:.04em;}-->
+<!--.tech-section{margin-bottom:2.5rem;}-->
+<!--.tech-row-label{font-family:var(&#45;&#45;font-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(&#45;&#45;muted);margin-bottom:.85rem;}-->
+<!--.tech-icons{display:flex;flex-wrap:wrap;gap:.6rem;}-->
+<!--.tech-icon{width:54px;height:54px;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-family:var(&#45;&#45;font-mono);font-size:.5rem;font-weight:600;color:#fff;letter-spacing:.02em;cursor:default;transition:transform .22s cubic-bezier(.34,1.56,.64,1),box-shadow .22s;box-shadow:0 2px 8px rgba(0,0,0,.35);}-->
+<!--.tech-icon:hover{transform:translateY(-5px) scale(1.08);box-shadow:0 12px 28px rgba(0,0,0,.5);}-->
+<!--.tech-icon svg{width:26px;height:26px;flex-shrink:0;}-->
+<!--.tech-icon span{font-size:.46rem;text-align:center;line-height:1.1;opacity:.88;}-->
+<!--.proj-section-label{font-family:var(&#45;&#45;font-mono);font-size:.78rem;color:var(&#45;&#45;text);letter-spacing:.04em;margin-bottom:1.25rem;display:flex;align-items:center;gap:.6rem;}-->
+<!--.proj-section-label span{font-size:1rem;}-->
+<!--.project-list{display:flex;flex-direction:column;gap:0;}-->
+<!--.project-row{display:flex;align-items:center;gap:1.4rem;padding:1.3rem 0;border-bottom:1px solid var(&#45;&#45;border);transition:all .2s;cursor:pointer;border-radius:0;}-->
+<!--.project-row:last-child{border-bottom:none;}-->
+<!--.project-row:hover{background:rgba(255,255,255,.02);padding-left:.5rem;}-->
+<!--.proj-thumb{width:80px;height:62px;border-radius:10px;background:var(&#45;&#45;surface);border:1px solid var(&#45;&#45;border);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.6rem;transition:border-color .2s;}-->
+<!--.project-row:hover .proj-thumb{border-color:rgba(0,212,255,.25);}-->
+<!--.proj-info{flex:1;min-width:0;}-->
+<!--.proj-title{font-family:var(&#45;&#45;font-display);font-weight:700;font-size:1rem;letter-spacing:-.02em;margin-bottom:.28rem;color:var(&#45;&#45;text);}-->
+<!--.proj-desc{font-size:.78rem;color:var(&#45;&#45;muted);line-height:1.6;margin-bottom:.55rem;}-->
+<!--.proj-tags{display:flex;flex-wrap:wrap;gap:.35rem;}-->
+<!--.tag{font-family:var(&#45;&#45;font-mono);font-size:.58rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.22rem .6rem;border-radius:999px;border:1px solid transparent;}-->
+<!--.tag-blue{background:rgba(56,139,253,.15);color:#58a6ff;border-color:rgba(56,139,253,.25);}-->
+<!--.tag-purple{background:rgba(123,94,167,.15);color:#b78cf7;border-color:rgba(123,94,167,.25);}-->
+<!--.tag-green{background:rgba(63,185,80,.15);color:#3fb950;border-color:rgba(63,185,80,.25);}-->
+<!--.tag-orange{background:rgba(210,153,34,.15);color:#e3b341;border-color:rgba(210,153,34,.25);}-->
+<!--.tag-cyan{background:rgba(0,212,255,.1);color:#00d4ff;border-color:rgba(0,212,255,.2);}-->
+<!--.tag-red{background:rgba(248,81,73,.15);color:#f85149;border-color:rgba(248,81,73,.25);}-->
+<!--.proj-arrow{font-family:var(&#45;&#45;font-mono);font-size:.8rem;color:var(&#45;&#45;muted);flex-shrink:0;transition:color .2s,transform .2s;}-->
+<!--.project-row:hover .proj-arrow{color:var(&#45;&#45;accent);transform:translateX(4px);}-->
+<!--.proj-more{font-family:var(&#45;&#45;font-mono);font-size:.68rem;color:var(&#45;&#45;muted);margin-top:1.25rem;letter-spacing:.04em;}-->
+<!--#page-project-detail .back-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(&#45;&#45;font-mono);font-size:.68rem;color:var(&#45;&#45;muted);letter-spacing:.08em;text-transform:uppercase;background:none;border:none;cursor:none;padding:0;margin-bottom:2rem;transition:color .2s;}-->
+<!--#page-project-detail .back-btn:hover{color:var(&#45;&#45;accent);}-->
+<!--#page-project-detail .back-btn svg{transition:transform .2s;}-->
+<!--#page-project-detail .back-btn:hover svg{transform:translateX(-3px);}-->
+<!--.detail-tags-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.5rem;}-->
+<!--.detail-date{font-family:var(&#45;&#45;font-mono);font-size:.68rem;color:var(&#45;&#45;muted);margin-bottom:2rem;letter-spacing:.05em;}-->
+<!--.detail-desc{font-size:.92rem;color:var(&#45;&#45;muted);line-height:1.85;max-width:680px;margin-bottom:2rem;}-->
+<!--.detail-desc span{color:var(&#45;&#45;text);}-->
+<!--.detail-screenshot{width:100%;max-width:780px;border:1px solid var(&#45;&#45;border);border-radius:12px;overflow:hidden;margin-bottom:2.5rem;background:var(&#45;&#45;surface);}-->
+<!--.detail-screenshot img{width:100%;display:block;}-->
+<!--.detail-screenshot-placeholder{width:100%;max-width:780px;height:280px;border:1px solid var(&#45;&#45;border);border-radius:12px;background:var(&#45;&#45;surface);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;margin-bottom:2.5rem;}-->
+<!--.detail-screenshot-placeholder span{font-family:var(&#45;&#45;font-mono);font-size:.72rem;color:var(&#45;&#45;muted);letter-spacing:.08em;}-->
+<!--.detail-features{margin-bottom:2.5rem;}-->
+<!--.detail-features h3{font-family:var(&#45;&#45;font-display);font-weight:700;font-size:1.1rem;margin-bottom:1rem;letter-spacing:-.02em;}-->
+<!--.detail-features ul{list-style:none;display:flex;flex-direction:column;gap:.5rem;}-->
+<!--.detail-features ul li{font-size:.85rem;color:var(&#45;&#45;muted);display:flex;align-items:flex-start;gap:.7rem;line-height:1.6;}-->
+<!--.detail-features ul li::before{content:'→';color:var(&#45;&#45;accent);font-family:var(&#45;&#45;font-mono);font-size:.75rem;flex-shrink:0;margin-top:.1rem;}-->
+<!--.detail-btns{display:flex;gap:1rem;flex-wrap:wrap;}-->
+<!--.detail-btn-demo{display:inline-flex;align-items:center;gap:.6rem;padding:.75rem 1.5rem;background:var(&#45;&#45;accent);color:var(&#45;&#45;bg);font-family:var(&#45;&#45;font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:6px;cursor:none;transition:opacity .2s;}-->
+<!--.detail-btn-demo:hover{opacity:.85;}-->
+<!--.detail-btn-code{display:inline-flex;align-items:center;gap:.6rem;padding:.75rem 1.5rem;background:transparent;color:var(&#45;&#45;text);border:1px solid var(&#45;&#45;border);font-family:var(&#45;&#45;font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:6px;cursor:none;transition:border-color .2s,color .2s;}-->
+<!--.detail-btn-code:hover{border-color:var(&#45;&#45;accent);color:var(&#45;&#45;accent);}-->
+<!--.article-list{display:flex;flex-direction:column;gap:.75rem;}-->
+<!--.article-card{border:1px solid var(&#45;&#45;border);background:var(&#45;&#45;bg2);padding:1.6rem 1.75rem;display:flex;align-items:flex-start;gap:1.75rem;flex-wrap:wrap;text-decoration:none;color:inherit;cursor:none;transition:border-color .3s,background .3s;}-->
+<!--.article-card:hover{border-color:var(&#45;&#45;accent);background:var(&#45;&#45;surface);}-->
+<!--.article-date{font-family:var(&#45;&#45;font-mono);font-size:.62rem;color:var(&#45;&#45;muted);letter-spacing:.08em;white-space:nowrap;padding-top:.2rem;min-width:72px;}-->
+<!--.article-body{flex:1;min-width:180px;}-->
+<!--.article-title{font-family:var(&#45;&#45;font-display);font-weight:700;font-size:1rem;letter-spacing:-.02em;margin-bottom:.35rem;transition:color .2s;}-->
+<!--.article-card:hover .article-title{color:var(&#45;&#45;accent);}-->
+<!--.article-excerpt{font-size:.8rem;color:var(&#45;&#45;muted);line-height:1.65;}-->
+<!--.article-badge{font-family:var(&#45;&#45;font-mono);font-size:.58rem;color:var(&#45;&#45;accent2);background:rgba(123,94,167,.07);border:1px solid rgba(123,94,167,.2);padding:.18rem .5rem;align-self:flex-start;margin-top:.2rem;white-space:nowrap;}-->
+<!--.article-arrow{font-size:.95rem;color:var(&#45;&#45;muted);align-self:center;flex-shrink:0;transition:color .2s,transform .2s;}-->
+<!--.article-card:hover .article-arrow{color:var(&#45;&#45;accent);transform:translateX(4px);}-->
+<!--.article-note{font-family:var(&#45;&#45;font-mono);font-size:.68rem;color:var(&#45;&#45;muted);margin-top:1.25rem;letter-spacing:.04em;}-->
+<!--#page-contact{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:calc(100vh - 8rem);}-->
+<!--.contact-email{font-family:var(&#45;&#45;font-display);font-weight:800;font-size:clamp(1.5rem,3vw,2.4rem);letter-spacing:-.03em;color:var(&#45;&#45;text);text-decoration:none;border-bottom:2px solid var(&#45;&#45;accent);padding-bottom:.18rem;transition:color .2s;display:inline-block;margin-bottom:2.5rem;}-->
+<!--.contact-email:hover{color:var(&#45;&#45;accent);}-->
+<!--.contact-desc{font-size:.88rem;color:var(&#45;&#45;muted);line-height:1.75;max-width:440px;margin-bottom:2.25rem;}-->
+<!--.contact-socials{display:flex;gap:.85rem;flex-wrap:wrap;}-->
+<!--.contact-social-btn{font-family:var(&#45;&#45;font-mono);font-size:.68rem;color:var(&#45;&#45;muted);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(&#45;&#45;border);padding:.55rem 1.1rem;transition:color .2s,border-color .2s;cursor:none;}-->
+<!--.contact-social-btn:hover{color:var(&#45;&#45;accent);border-color:var(&#45;&#45;accent);}-->
+<!--.contact-form{width:100%;max-width:520px;margin-top:2.5rem;border-top:1px solid var(&#45;&#45;border);padding-top:2rem;}-->
+<!--.form-group{margin-bottom:1.1rem;}-->
+<!--.form-label{font-family:var(&#45;&#45;font-mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(&#45;&#45;muted);display:block;margin-bottom:.45rem;}-->
+<!--.form-input,.form-textarea{width:100%;background:var(&#45;&#45;surface);border:1px solid var(&#45;&#45;border);color:var(&#45;&#45;text);font-family:var(&#45;&#45;font-body);font-size:.88rem;padding:.75rem 1rem;outline:none;transition:border-color .2s;border-radius:0;}-->
+<!--.form-input:focus,.form-textarea:focus{border-color:var(&#45;&#45;accent);}-->
+<!--.form-textarea{resize:vertical;min-height:110px;}-->
+<!--.form-submit{font-family:var(&#45;&#45;font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(&#45;&#45;bg);background:var(&#45;&#45;accent);border:none;padding:.8rem 2rem;cursor:none;transition:box-shadow .3s;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);}-->
+<!--.form-submit:hover{box-shadow:0 0 24px rgba(0,212,255,.4);}-->
+<!--.stagger>*{opacity:0;transform:translateY(14px);}-->
+<!--.stagger.animate>*{animation:fadeUp .55s cubic-bezier(.22,1,.36,1) forwards;}-->
+<!--.stagger.animate>*:nth-child(1){animation-delay:.05s;}.stagger.animate>*:nth-child(2){animation-delay:.12s;}.stagger.animate>*:nth-child(3){animation-delay:.19s;}.stagger.animate>*:nth-child(4){animation-delay:.26s;}.stagger.animate>*:nth-child(5){animation-delay:.33s;}.stagger.animate>*:nth-child(6){animation-delay:.4s;}.stagger.animate>*:nth-child(7){animation-delay:.47s;}.stagger.animate>*:nth-child(8){animation-delay:.54s;}-->
+<!--@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}-->
+<!--footer.page-footer{margin-top:4rem;border-top:1px solid var(&#45;&#45;border);padding-top:1.4rem;display:flex;justify-content:space-between;align-items:center;}-->
+<!--.footer-text{font-family:var(&#45;&#45;font-mono);font-size:.62rem;color:var(&#45;&#45;muted);letter-spacing:.04em;}-->
+<!--@media(max-width:768px){-->
+<!--  body{flex-direction:column;overflow:auto;overflow-x:hidden;cursor:auto;}-->
+<!--  .cursor,.cursor-ring{display:none;}-->
+<!--  .sidebar{width:100%;height:auto;flex-direction:column;padding:1rem 1.25rem;border-right:none;border-bottom:1px solid var(&#45;&#45;border);position:sticky;top:0;z-index:100;}-->
+<!--  .profile{flex-direction:row;text-align:left;align-items:center;padding-bottom:0;border-bottom:none;margin-bottom:.75rem;gap:.75rem;}-->
+<!--  .avatar-wrap{width:38px;height:38px;margin-bottom:0;flex-shrink:0;}-->
+<!--  .avatar-placeholder{font-size:.9rem;}-->
+<!--  .profile-name{font-size:.82rem;}-->
+<!--  .profile-role{font-size:.55rem;}-->
+<!--  .sidebar-nav{flex:none;display:flex;flex-direction:row;flex-wrap:wrap;gap:.3rem;overflow-x:auto;padding-bottom:.25rem;}-->
+<!--  .nav-section-label{display:none;}-->
+<!--  .nav-link{display:inline-flex;width:auto;padding:.4rem .75rem;font-size:.72rem;border-radius:999px;margin-bottom:0;margin-right:.3rem;border:1px solid var(&#45;&#45;border);}-->
+<!--  .nav-link.active{border-color:var(&#45;&#45;accent);}-->
+<!--  .social-link,.cv-btn{display:none;}-->
+<!--  .main{height:auto;overflow:visible;}-->
+<!--  .page{position:relative;inset:auto;overflow-y:visible;padding:2rem 1.25rem;opacity:1;pointer-events:all;transform:none;transition:none;display:none;}-->
+<!--  .page.active{display:block;}-->
+<!--  .hero-inner{flex-direction:column;gap:2rem;min-height:auto;padding-top:1rem;}-->
+<!--  .hero-text{min-width:unset;}-->
+<!--  h1.hero-name{font-size:clamp(2.8rem,12vw,4.5rem);}-->
+<!--  .orbit-wrap{display:none;}-->
+<!--  .hero-btns{gap:.6rem;}-->
+<!--  .btn-primary,.btn-outline{padding:.7rem 1.2rem;font-size:.68rem;}-->
+<!--  h1.page-title{font-size:clamp(2rem,8vw,2.8rem);margin-bottom:1.5rem;}-->
+<!--  .about-grid{grid-template-columns:1fr;gap:2rem;}-->
+<!--  .about-stats{grid-template-columns:1fr 1fr;gap:.75rem;}-->
+<!--  .stat-card{padding:1rem;}-->
+<!--  .stat-num{font-size:1.5rem;}-->
+<!--  .skills-cols{grid-template-columns:1fr;gap:1.5rem;}-->
+<!--  .tech-icon{width:48px;height:48px;border-radius:12px;}-->
+<!--  .tech-icon svg{width:22px;height:22px;}-->
+<!--  .project-row{flex-wrap:wrap;gap:1rem;padding:1rem 0;}-->
+<!--  .proj-thumb{width:60px;height:48px;font-size:1.3rem;}-->
+<!--  .proj-title{font-size:.9rem;}-->
+<!--  .proj-desc{font-size:.74rem;}-->
+<!--  #page-project-detail .back-btn{margin-bottom:1.5rem;}-->
+<!--  .detail-desc{font-size:.85rem;}-->
+<!--  .detail-features ul li{font-size:.8rem;}-->
+<!--  .detail-btns{flex-direction:column;gap:.75rem;}-->
+<!--  .detail-btn-demo,.detail-btn-code{justify-content:center;}-->
+<!--  .article-card{flex-wrap:wrap;gap:1rem;padding:1.25rem;}-->
+<!--  .article-date{min-width:unset;}-->
+<!--  #page-contact{min-height:auto;padding-top:1rem;}-->
+<!--  .contact-email{font-size:1.3rem;}-->
+<!--  .contact-socials{gap:.5rem;}-->
+<!--  .contact-social-btn{padding:.45rem .8rem;font-size:.62rem;}-->
+<!--  .contact-form{margin-top:1.5rem;}-->
+<!--  footer.page-footer{flex-direction:column;gap:.5rem;text-align:center;}-->
+<!--}-->
+<!--</style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="cursor" id="cursor"></div>-->
+<!--<div class="cursor-ring" id="cursorRing"></div>-->
+<!--<aside class="sidebar">-->
+<!--  <div class="profile">-->
+<!--    <div class="avatar-wrap"><div class="avatar-placeholder">JA</div></div>-->
+<!--    <div class="profile-name">Jazib Aslam</div>-->
+<!--    <div class="profile-role">BSAI Student</div>-->
+<!--  </div>-->
+<!--  <nav class="sidebar-nav">-->
+<!--    <div class="nav-section-label">Menu</div>-->
+<!--    <button class="nav-link active" data-page="home"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12L12 3l9 9M5 10v10h5v-5h4v5h5V10"/></svg>Home</button>-->
+<!--    <button class="nav-link" data-page="about"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>About</button>-->
+<!--    <button class="nav-link" data-page="skills"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Skills</button>-->
+<!--    <button class="nav-link" data-page="projects"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Projects</button>-->
+<!--    <button class="nav-link" data-page="articles"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Articles</button>-->
+<!--    <button class="nav-link" data-page="contact"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Contact</button>-->
+<!--    <div class="nav-section-label">Socials</div>-->
+<!--    <a href="#" class="social-link"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>-->
+<!--    <a href="https://github.com/JazibAslam124" target="_blank" class="social-link"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>GitHub</a>-->
+<!--    <a href="#" class="social-link"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>Kaggle</a>-->
+<!--    <a href="#" class="social-link"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>Hugging Face</a>-->
+<!--  </nav>-->
+<!--  <a href="#" class="cv-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>Download CV</a>-->
+<!--</aside>-->
+<!--<main class="main">-->
+
+<!--&lt;!&ndash; HOME &ndash;&gt;-->
+<!--<div class="page active" id="page-home">-->
+<!--  <div class="hero-grid-bg"></div>-->
+<!--  <div class="hero-inner">-->
+<!--    <div class="hero-text">-->
+<!--      <div class="hero-tag">BSAI · Machine Learning · AI Developer</div>-->
+<!--      <h1 class="hero-name">Hi! I'm<br><span class="accent">Jazib<br>Aslam.</span> 👋</h1>-->
+<!--      <p class="hero-sub">// <span>Bachelor of Science in Artificial Intelligence</span><br>Deep Learning · Computer Vision · Problem Solver</p>-->
+<!--      <div class="hero-btns">-->
+<!--        <button class="btn-primary" onclick="navigate('projects')">View Projects</button>-->
+<!--        <button class="btn-outline" onclick="navigate('contact')">Get in Touch</button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="orbit-wrap">-->
+<!--      <div class="orbit-ring"><div class="orbit-dot" style="top:-3.5px;left:calc(50% - 3.5px)"></div></div>-->
+<!--      <div class="orbit-ring-2"><div class="orbit-dot" style="bottom:-3.5px;left:calc(50% - 3.5px);background:var(&#45;&#45;accent2);box-shadow:0 0 10px var(&#45;&#45;accent2)"></div></div>-->
+<!--      <div class="orbit-center">AI</div>-->
+<!--      <span class="orbit-label" style="top:0;left:50%;transform:translateX(-50%) translateY(-130%)">Python</span>-->
+<!--      <span class="orbit-label" style="right:-12px;top:50%;transform:translateY(-50%)">API</span>-->
+<!--      <span class="orbit-label" style="bottom:0;left:50%;transform:translateX(-50%) translateY(130%)">SQL</span>-->
+<!--      <span class="orbit-label" style="left:-8px;top:50%;transform:translateY(-50%)">CV</span>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <footer class="page-footer"><span class="footer-text">© 2026 Jazib Aslam</span><span class="footer-text">Made with ♥ in Pakistan</span></footer>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; ABOUT &ndash;&gt;-->
+<!--<div class="page" id="page-about">-->
+<!--  <div class="page-eyebrow">About me</div>-->
+<!--  <h1 class="page-title">Who I am</h1>-->
+<!--  <div class="about-grid stagger">-->
+<!--    <div class="about-text">-->
+<!--      <p>Hey! I'm <span>Jazib Aslam</span>, a passionate <span>Bachelor of Science in Artificial Intelligence</span> student with a deep interest in building intelligent systems that solve real-world problems.</p>-->
+<!--      <p>My journey in AI spans <span>machine learning, deep learning, computer vision, and natural language processing</span> — always exploring the latest frontiers in the field.</p>-->
+<!--      <p>When I'm not training models or debugging code, I'm reading research papers, writing about AI, and working toward a future powered by <span>intelligent technology.</span></p>-->
+<!--      <div class="learning-strip">-->
+<!--        <span class="learning-tag">Currently learning</span>-->
+<!--        <div class="learning-items">-->
+<!--          <span class="learning-item">SQL &amp; Analytics</span>-->
+<!--          <span class="learning-item">FastAPI &amp; REST</span>-->
+<!--          <span class="learning-item">RAG Systems</span>-->
+<!--          <span class="learning-item">MLOps</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="about-stats">-->
+<!--      <div class="stat-card"><div class="stat-num">AI</div><div class="stat-label">Major Focus</div></div>-->
+<!--      <div class="stat-card"><div class="stat-num">BS</div><div class="stat-label">Degree</div></div>-->
+<!--      <div class="stat-card"><div class="stat-num">7+</div><div class="stat-label">Projects</div></div>-->
+<!--      <div class="stat-card"><div class="stat-num">01</div><div class="stat-label">Mission</div></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <footer class="page-footer"><span class="footer-text">© 2026 Jazib Aslam</span><span class="footer-text">Made with ♥ in Pakistan</span></footer>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; SKILLS &ndash;&gt;-->
+<!--<div class="page" id="page-skills">-->
+<!--  <div class="page-eyebrow">Skills</div>-->
+<!--  <h1 class="page-title">What I work with</h1>-->
+<!--  <div class="skills-cols stagger">-->
+<!--    <div>-->
+<!--      <div class="skill-group-title">AI &amp; Machine Learning</div>-->
+<!--      <div class="skills-list">-->
+<!--        <div class="skill-pill"><div class="skill-dot"></div><span class="skill-name">Machine Learning</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot"></div><span class="skill-name">Deep Learning</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot"></div><span class="skill-name">Computer Vision</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot"></div><span class="skill-name">Object Detection (YOLOv8)</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot"></div><span class="skill-name">Natural Language Processing</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot"></div><span class="skill-name">OCR Pipelines</span></div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <div class="skill-group-title">Languages &amp; Tools</div>-->
+<!--      <div class="skills-list">-->
+<!--        <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">Python</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">SQL &amp; SQLite</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">FastAPI &amp; REST APIs</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">SQLAlchemy &amp; Pydantic</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">Streamlit &amp; Plotly</span></div>-->
+<!--        <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">PyTorch &amp; OpenCV</span></div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="ai-tools-section">-->
+<!--    <div class="page-eyebrow" style="margin-bottom:.5rem;">AI Tools I use daily</div>-->
+<!--    <div class="ai-tools-grid stagger animate">-->
+<!--      <span class="ai-tool">ChatGPT</span><span class="ai-tool">Claude</span>-->
+<!--      <span class="ai-tool">GitHub Copilot</span><span class="ai-tool">Cursor</span>-->
+<!--      <span class="ai-tool">Hugging Face</span><span class="ai-tool">Google Colab</span>-->
+<!--      <span class="ai-tool">Roboflow</span><span class="ai-tool">n8n</span>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <footer class="page-footer"><span class="footer-text">© 2026 Jazib Aslam</span><span class="footer-text">Made with ♥ in Pakistan</span></footer>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; PROJECTS &ndash;&gt;-->
+<!--<div class="page" id="page-projects">-->
+<!--  <div class="page-eyebrow">Projects</div>-->
+<!--  <h1 class="page-title">Project Playground 🚀</h1>-->
+<!--  <div class="tech-section">-->
+<!--    <div class="tech-row-label">Technologies I've worked with ⚙️</div>-->
+<!--    <div class="tech-icons stagger">-->
+<!--      <div class="tech-icon" style="background:#3776ab"><svg viewBox="0 0 128 128" fill="none"><path d="M49.33 62h29.34C89.8 62 96 55.62 96 45.81V31.19C96 21.6 89.61 16.28 79.29 15.05 76.2 14.65 73.09 14.48 70 14.5c-3.12.02-6.24.25-9.28.7C51.87 16.94 48 21.07 48 31.19V39h25v3H38.5c-9.58 0-17.96 5.76-20.6 16.72-3.06 12.55-3.19 20.37 0 33.47C20.15 101.77 25.67 108 35.25 108H45V97.22c0-10.87 9.41-20.22 20.67-20.22H90.3c9.21 0 16.7-7.58 16.7-16.8V45.81c0-8.93-7.62-15.62-16.7-16.74C87.79 29.62 84.82 29.5 82 29.5H70c-2.82 0-5.79.12-8.3.57" fill="#fff" opacity=".7"/><path d="M79 66H49.67C38.2 66 32 72.38 32 82.19v14.62C32 106.4 38.61 111.72 48.71 112.95c3.09.4 6.2.57 9.29.55 3.12-.02 6.24-.25 9.28-.7C76.13 111.06 80 106.93 80 96.81V89H55v-3h34.5c9.58 0 17.96-5.76 20.6-16.72 3.06-12.55 3.19-20.37 0-33.47C107.85 26.23 102.33 20 92.75 20H83v10.78C83 41.65 73.59 51 62.33 51H37.7C28.49 51 21 58.58 21 67.8V82.19c0 8.93 7.62 15.62 16.7 16.74 2.51.45 5.48.57 8.3.57H58c2.82 0 5.79-.12 8.3-.57" fill="#fff" opacity=".4"/><circle cx="62.8" cy="31" r="4" fill="#fff"/><circle cx="65.2" cy="97" r="4" fill="#fff"/></svg><span>Python</span></div>-->
+<!--      <div class="tech-icon" style="background:#009688"><svg viewBox="0 0 128 128"><path d="M64 12L12 40v48l52 28 52-28V40L64 12zm0 12l40 22v36L64 104 24 82V46l40-22z" fill="#fff"/><circle cx="64" cy="64" r="16" fill="#fff" opacity=".9"/></svg><span>FastAPI</span></div>-->
+<!--      <div class="tech-icon" style="background:#ee4c2c"><svg viewBox="0 0 128 128"><path d="M64 10L32 42l8 8 6-6v28c0 9.9 8.1 18 18 18s18-8.1 18-18V44l6 6 8-8L64 10zm0 68c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z" fill="#fff"/></svg><span>PyTorch</span></div>-->
+<!--      <div class="tech-icon" style="background:#5c3ee8"><svg viewBox="0 0 128 128"><circle cx="42" cy="44" r="18" fill="none" stroke="#fff" stroke-width="10"/><circle cx="86" cy="44" r="18" fill="none" stroke="#fff" stroke-width="10"/><circle cx="64" cy="82" r="18" fill="none" stroke="#fff" stroke-width="10"/></svg><span>OpenCV</span></div>-->
+<!--      <div class="tech-icon" style="background:#336791"><svg viewBox="0 0 128 128"><ellipse cx="64" cy="30" rx="40" ry="16" fill="none" stroke="#fff" stroke-width="8"/><path d="M24 30v68c0 9 18 16 40 16s40-7 40-16V30" fill="none" stroke="#fff" stroke-width="8"/><path d="M24 64c0 9 18 16 40 16s40-7 40-16" fill="none" stroke="#fff" stroke-width="6"/></svg><span>SQL</span></div>-->
+<!--      <div class="tech-icon" style="background:#f7931e"><svg viewBox="0 0 128 128"><ellipse cx="64" cy="64" rx="42" ry="26" fill="none" stroke="#fff" stroke-width="9"/><ellipse cx="64" cy="64" rx="42" ry="26" fill="none" stroke="#fff" stroke-width="9" transform="rotate(60 64 64)"/><ellipse cx="64" cy="64" rx="42" ry="26" fill="none" stroke="#fff" stroke-width="9" transform="rotate(120 64 64)"/><circle cx="64" cy="64" r="8" fill="#fff"/></svg><span>Sklearn</span></div>-->
+<!--      <div class="tech-icon" style="background:#150458"><svg viewBox="0 0 128 128"><rect x="30" y="20" width="16" height="88" rx="8" fill="#e70488"/><rect x="82" y="20" width="16" height="88" rx="8" fill="#e70488"/><rect x="30" y="45" width="68" height="15" rx="4" fill="#fff" opacity=".85"/><rect x="30" y="68" width="68" height="15" rx="4" fill="#fff" opacity=".85"/></svg><span>Pandas</span></div>-->
+<!--      <div class="tech-icon" style="background:#013243"><svg viewBox="0 0 128 128"><path d="M64 18L18 42v44l46 24 46-24V42L64 18zm0 12l34 18-34 18-34-18 34-18zM28 52l30 16v30L28 82V52zm72 0v30L70 98V68l30-16z" fill="#fff"/></svg><span>NumPy</span></div>-->
+<!--      <div class="tech-icon" style="background:#ff4b4b"><svg viewBox="0 0 128 128"><path d="M20 80 Q40 50 64 65 Q88 80 108 48" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M28 100 Q50 68 74 83 Q98 98 112 68" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" opacity=".7"/></svg><span>Streamlit</span></div>-->
+<!--      <div class="tech-icon" style="background:#3d4f7c"><svg viewBox="0 0 128 128"><path d="M20 90 L64 30 L108 90 Z" fill="none" stroke="#fff" stroke-width="8"/><circle cx="64" cy="30" r="6" fill="#fff"/><circle cx="20" cy="90" r="6" fill="#fff"/><circle cx="108" cy="90" r="6" fill="#fff"/><line x1="64" y1="30" x2="64" y2="90" stroke="#fff" stroke-width="4" opacity=".5"/></svg><span>Plotly</span></div>-->
+<!--      <div class="tech-icon" style="background:#f05032"><svg viewBox="0 0 128 128"><path d="M119.83 58.63L69.37 8.17a11.66 11.66 0 00-16.5 0l-10.96 10.96 13.9 13.9a13.85 13.85 0 0117.5 17.63l13.4 13.4a13.85 13.85 0 11-8.3 8.11L65.95 59.71v34.1a13.85 13.85 0 11-11.38-.44V58.7a13.85 13.85 0 01-7.52-18.17L33.2 26.65 8.17 51.68a11.66 11.66 0 000 16.5l50.46 50.46a11.66 11.66 0 0016.5 0l44.7-44.7a11.66 11.66 0 000-16.31z" fill="#fff"/></svg><span>Git</span></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="proj-section-label">What I have been working on <span>⚡</span></div>-->
+<!--  <div class="project-list stagger">-->
+<!--    <div class="project-row" onclick="openProject('fraud')"><div class="proj-thumb">🔍</div><div class="proj-info"><div class="proj-title">Insurance Claim Fraud Detector</div><div class="proj-desc">End-to-end ML system — Random Forest scores insurance claims and automatically triggers Camunda BPMN workflows routing to Reject, Manual Review, or Approve.</div><div class="proj-tags"><span class="tag tag-red">RANDOM FOREST</span><span class="tag tag-blue">CAMUNDA</span><span class="tag tag-green">FASTAPI</span><span class="tag tag-orange">SKLEARN</span><span class="tag tag-purple">BPMN</span></div></div><span class="proj-arrow">→</span></div>-->
+<!--    <div class="project-row" onclick="openProject('taskapi')"><div class="proj-thumb">⚡</div><div class="proj-info"><div class="proj-title">Task Manager REST API</div><div class="proj-desc">RESTful CRUD API built with FastAPI, SQLAlchemy and SQLite — create, read, update and delete tasks with auto-generated interactive Swagger docs.</div><div class="proj-tags"><span class="tag tag-green">FASTAPI</span><span class="tag tag-blue">SQLALCHEMY</span><span class="tag tag-purple">SQLITE</span><span class="tag tag-orange">PYTHON</span><span class="tag tag-cyan">REST API</span></div></div><span class="proj-arrow">→</span></div>-->
+<!--    <div class="project-row" onclick="openProject('sales')"><div class="proj-thumb">📊</div><div class="proj-info"><div class="proj-title">Sales Analytics Dashboard</div><div class="proj-desc">Interactive sales dashboard powered by SQL queries on the Superstore dataset — live KPI cards, monthly trends, regional breakdowns and category filters.</div><div class="proj-tags"><span class="tag tag-purple">SQL</span><span class="tag tag-blue">SQLITE</span><span class="tag tag-cyan">STREAMLIT</span><span class="tag tag-orange">PLOTLY</span><span class="tag tag-green">PYTHON</span></div></div><span class="proj-arrow">→</span></div>-->
+<!--    <div class="project-row" onclick="openProject('invoice')"><div class="proj-thumb">🧾</div><div class="proj-info"><div class="proj-title">Invoice Information Extraction System</div><div class="proj-desc">Extracts vendor name, total amount, dates and line items from invoice images and PDFs using OCR — automating manual data entry.</div><div class="proj-tags"><span class="tag tag-blue">OPENCV</span><span class="tag tag-purple">TESSERACT OCR</span><span class="tag tag-cyan">STREAMLIT</span><span class="tag tag-orange">PYTHON</span></div></div><span class="proj-arrow">→</span></div>-->
+<!--    <div class="project-row" onclick="openProject('face')"><div class="proj-thumb">👤</div><div class="proj-info"><div class="proj-title">Face Attendance System</div><div class="proj-desc">Real-time face recognition that registers people via webcam and logs attendance to CSV automatically with duplicate prevention.</div><div class="proj-tags"><span class="tag tag-blue">OPENCV</span><span class="tag tag-green">LBPH</span><span class="tag tag-cyan">STREAMLIT</span><span class="tag tag-orange">PYTHON</span></div></div><span class="proj-arrow">→</span></div>-->
+<!--    <div class="project-row" onclick="openProject('anon')"><div class="proj-thumb">🔒</div><div class="proj-info"><div class="proj-title">ANON4REID — Privacy Research</div><div class="proj-desc">Academic research benchmarking the privacy-utility trade-off in person re-identification using the Market-1501 dataset at TH Deggendorf.</div><div class="proj-tags"><span class="tag tag-orange">PYTORCH</span><span class="tag tag-purple">REID</span><span class="tag tag-blue">PRIVACY AI</span><span class="tag tag-green">RESEARCH</span></div></div><span class="proj-arrow">→</span></div>-->
+<!--    <div class="project-row" onclick="openProject('slides')"><div class="proj-thumb">🤖</div><div class="proj-info"><div class="proj-title">AI Slides Generator</div><div class="proj-desc">n8n automation workflow that generates Google Slides presentations from a chat prompt using Gemini AI and Unsplash images.</div><div class="proj-tags"><span class="tag tag-blue">N8N</span><span class="tag tag-green">GEMINI</span><span class="tag tag-purple">GOOGLE SLIDES API</span></div></div><span class="proj-arrow">→</span></div>-->
+<!--  </div>-->
+<!--  <p class="proj-more">// More projects coming soon</p>-->
+<!--  <footer class="page-footer"><span class="footer-text">© 2026 Jazib Aslam</span><span class="footer-text">Made with ♥ in Pakistan</span></footer>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; PROJECT DETAIL &ndash;&gt;-->
+<!--<div class="page" id="page-project-detail">-->
+<!--  <button class="back-btn" onclick="navigate('projects')">-->
+<!--    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>-->
+<!--    Back to projects-->
+<!--  </button>-->
+<!--  <div id="detail-content"></div>-->
+<!--  <footer class="page-footer"><span class="footer-text">© 2026 Jazib Aslam</span><span class="footer-text">Made with ♥ in Pakistan</span></footer>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; ARTICLES &ndash;&gt;-->
+<!--<div class="page" id="page-articles">-->
+<!--  <div class="page-eyebrow">Articles</div>-->
+<!--  <h1 class="page-title">Thoughts &amp; Writing</h1>-->
+<!--  <div class="article-list stagger">-->
+<!--    <a href="#" class="article-card"><div class="article-date">Mar 2026</div><div class="article-body"><div class="article-title">What is Retrieval-Augmented Generation (RAG)?</div><div class="article-excerpt">A beginner-friendly breakdown of how RAG systems work and why they're changing how we build AI applications.</div></div><span class="article-badge">LLMs</span><span class="article-arrow">→</span></a>-->
+<!--    <a href="#" class="article-card"><div class="article-date">Feb 2026</div><div class="article-body"><div class="article-title">My Journey Learning PyTorch from Scratch</div><div class="article-excerpt">How I went from zero to training my first neural network — lessons learned, mistakes made, and resources that helped.</div></div><span class="article-badge">Deep Learning</span><span class="article-arrow">→</span></a>-->
+<!--    <a href="#" class="article-card"><div class="article-date">Jan 2026</div><div class="article-body"><div class="article-title">5 AI Tools Every CS Student Should Know</div><div class="article-excerpt">From Copilot to Cursor to Claude — the tools that genuinely changed how I study, code, and research.</div></div><span class="article-badge">Productivity</span><span class="article-arrow">→</span></a>-->
+<!--    <a href="#" class="article-card"><div class="article-date">Dec 2025</div><div class="article-body"><div class="article-title">Building an AI Slides Generator with n8n &amp; Gemini</div><div class="article-excerpt">How I built an AI-powered slide deck generator in a single hackathon session using n8n, Gemini, and the Google Slides API.</div></div><span class="article-badge">Automation</span><span class="article-arrow">→</span></a>-->
+<!--  </div>-->
+<!--  <p class="article-note">// Replace with links to your real Medium / Dev.to / Hashnode articles</p>-->
+<!--  <footer class="page-footer"><span class="footer-text">© 2026 Jazib Aslam</span><span class="footer-text">Made with ♥ in Pakistan</span></footer>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; CONTACT &ndash;&gt;-->
+<!--<div class="page" id="page-contact">-->
+<!--  <div class="page-eyebrow">Contact</div>-->
+<!--  <h1 class="page-title">Let's connect</h1>-->
+<!--  <p class="contact-desc">Whether it's a project, collaboration, or just a conversation about AI — my inbox is always open.</p>-->
+<!--  <a href="mailto:jazibaslam124@gmail.com" class="contact-email">jazibaslam124@gmail.com</a>-->
+<!--  <div class="contact-socials">-->
+<!--    <a href="https://github.com/JazibAslam124" target="_blank" class="contact-social-btn">GitHub</a>-->
+<!--    <a href="#" class="contact-social-btn">LinkedIn</a>-->
+<!--    <a href="#" class="contact-social-btn">Kaggle</a>-->
+<!--    <a href="#" class="contact-social-btn">Hugging Face</a>-->
+<!--  </div>-->
+<!--  <div class="contact-form">-->
+<!--    <div class="page-eyebrow" style="margin-bottom:1rem;">Or send a message</div>-->
+<!--    <div class="form-group"><label class="form-label">Name</label><input class="form-input" type="text" placeholder="Your name"/></div>-->
+<!--    <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="your@email.com"/></div>-->
+<!--    <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="What's on your mind?"></textarea></div>-->
+<!--    <button class="form-submit">Send Message →</button>-->
+<!--  </div>-->
+<!--  <footer class="page-footer"><span class="footer-text">© 2026 Jazib Aslam</span><span class="footer-text">Made with ♥ in Pakistan</span></footer>-->
+<!--</div>-->
+
+<!--</main>-->
+<!--<script>-->
+<!--// ── Cursor ──────────────────────────────────────────────────-->
+<!--const cursor=document.getElementById('cursor'),ring=document.getElementById('cursorRing');-->
+<!--let mx=0,my=0,rx=0,ry=0;-->
+<!--document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx-4+'px';cursor.style.top=my-4+'px';});-->
+<!--(function ar(){rx+=(mx-rx)*.13;ry+=(my-ry)*.13;ring.style.left=rx-14+'px';ring.style.top=ry-14+'px';requestAnimationFrame(ar);})();-->
+
+<!--// ── Project data ──────────────────────────────────────────────-->
+<!--const projects={-->
+<!--  fraud:{-->
+<!--    title:"Insurance Claim Fraud Detector",-->
+<!--    date:"Apr 2026 · scikit-learn · FastAPI · Camunda",-->
+<!--    tags:['<span class="tag tag-red">RANDOM FOREST</span>','<span class="tag tag-blue">CAMUNDA BPMN</span>','<span class="tag tag-green">FASTAPI</span>','<span class="tag tag-orange">SKLEARN</span>','<span class="tag tag-purple">PYTHON</span>','<span class="tag tag-cyan">REST API</span>'],-->
+<!--    desc:`An end-to-end <span>insurance claim fraud detection system</span> that combines a trained Random Forest ML model with Camunda Cloud BPMN process automation. Claims are scored by the model and automatically routed via REST API to one of three outcomes: <span>Reject, Manual Review, or Approve</span>.`,-->
+<!--    features:["Random Forest classifier trained on insurance claim features with fraud labels","FastAPI backend serves the model as a REST endpoint for real-time scoring","Camunda Cloud integration — ML score triggers BPMN process instance via REST","Automated decision routing: high risk → Reject, medium → Manual Review, low → Approve","End-to-end pipeline from raw claim data to automated workflow decision","Demonstrates ML + business process automation in a single system"],-->
+<!--    github:"https://github.com/JazibAslam124/claim-fraud-detector",-->
+<!--    demo:"https://claim-fraud-detector-rdp9pspmu5n4fzy38j3kad.streamlit.app/",-->
+<!--    video:"0411.mp4"-->
+<!--  },-->
+<!--  taskapi:{-->
+<!--    title:"Task Manager REST API",-->
+<!--    date:"Apr 2026 · FastAPI · SQLAlchemy · SQLite",-->
+<!--    tags:['<span class="tag tag-green">FASTAPI</span>','<span class="tag tag-blue">SQLALCHEMY</span>','<span class="tag tag-purple">SQLITE</span>','<span class="tag tag-orange">PYTHON</span>','<span class="tag tag-cyan">REST API</span>','<span class="tag tag-red">PYDANTIC</span>'],-->
+<!--    desc:`A production-ready <span>RESTful CRUD API</span> built with FastAPI and SQLAlchemy. Create, read, update and delete tasks with full validation, auto-generated interactive Swagger docs at <span>/docs</span>, and a persistent SQLite database backend.`,-->
+<!--    features:["Full CRUD endpoints — POST, GET, PUT, DELETE for task management","SQLAlchemy ORM with SQLite for persistent storage across requests","Auto-generated interactive API docs via Swagger UI at /docs","Pydantic models for request validation and response serialization","FastAPI dependency injection for clean database session management","Production-ready structure — easily swappable to PostgreSQL"],-->
+<!--    github:"https://github.com/JazibAslam124/task-manager-api",demo:null-->
+<!--  },-->
+<!--  sales:{-->
+<!--    title:"Sales Analytics Dashboard",-->
+<!--    date:"Apr 2026 · Python · SQL · Streamlit",-->
+<!--    tags:['<span class="tag tag-purple">SQL</span>','<span class="tag tag-blue">SQLITE</span>','<span class="tag tag-cyan">STREAMLIT</span>','<span class="tag tag-orange">PLOTLY</span>','<span class="tag tag-green">PYTHON</span>','<span class="tag tag-red">PANDAS</span>'],-->
+<!--    desc:`An interactive sales analytics dashboard built with <span>Python, SQLite, Streamlit and Plotly</span>. Powered entirely by SQL queries on the Superstore dataset — features live KPI cards, monthly revenue trends, regional breakdowns, category filters, and a raw data explorer.`,-->
+<!--    features:["Live KPI cards showing total revenue, orders, profit and average order value","Monthly revenue trend chart with interactive Plotly line graphs","Regional performance breakdown — compare sales across US regions","Category and sub-category filter for drill-down analysis","Raw data explorer with SQL query execution and export to CSV","Entirely powered by SQL queries on a SQLite database — no ORM"],-->
+<!--    github:"https://github.com/JazibAslam124/sales-dashboard",-->
+<!--    demo:"https://jazib-aslam-sales-dashboard.streamlit.app/"-->
+<!--  },-->
+<!--  invoice:{-->
+<!--    title:"Invoice Information Extraction System",-->
+<!--    date:"Nov 2024 · Python · OCR",-->
+<!--    tags:['<span class="tag tag-blue">OPENCV</span>','<span class="tag tag-purple">TESSERACT OCR</span>','<span class="tag tag-cyan">STREAMLIT</span>','<span class="tag tag-orange">PYTHON</span>'],-->
+<!--    desc:`An end-to-end OCR pipeline that automatically extracts structured information from invoice images and PDF documents. Upload any invoice and the system identifies and pulls out <span>vendor name, invoice number, total amount, line items, and dates</span> — eliminating manual data entry completely.`,-->
+<!--    features:["Supports both image uploads (JPG, PNG) and PDF documents","Extracts structured fields: vendor, amount, date, invoice number, line items","Built with OpenCV for image preprocessing and Tesseract OCR for text extraction","Clean Streamlit dashboard with JSON output and CSV export","FastAPI endpoint for programmatic integration"],-->
+<!--    github:"https://github.com/JazibAslam124/invoice-ocr-pipeline",demo:null,-->
+<!--    screenshot:"Screenshot 2026-04-01 045708.png"-->
+<!--  },-->
+<!--  face:{-->
+<!--    title:"Face Attendance System",-->
+<!--    date:"Mar 2026 · Python · Computer Vision",-->
+<!--    tags:['<span class="tag tag-blue">OPENCV</span>','<span class="tag tag-green">LBPH</span>','<span class="tag tag-cyan">STREAMLIT</span>','<span class="tag tag-orange">PYTHON</span>'],-->
+<!--    desc:`A real-time face recognition attendance system built with OpenCV's LBPH algorithm. Register faces via webcam, then scan to automatically log attendance with <span>timestamp, date, and duplicate prevention</span> — no manual tracking needed.`,-->
+<!--    features:["Register new people by capturing face via webcam in the sidebar","Real-time face recognition using OpenCV LBPH — no dlib or complex install","Prevents duplicate entries — one record per person per day","CSV export of all attendance records with timestamps","Works fully offline — no internet or API keys needed"],-->
+<!--    github:"https://github.com/JazibAslam124",demo:null-->
+<!--  },-->
+<!--  anon:{-->
+<!--    title:"ANON4REID — Privacy Research",-->
+<!--    date:"2024 — Present · PyTorch · Research",-->
+<!--    tags:['<span class="tag tag-orange">PYTORCH</span>','<span class="tag tag-purple">REID</span>','<span class="tag tag-blue">PRIVACY AI</span>','<span class="tag tag-green">MARKET-1501</span>'],-->
+<!--    desc:`Academic research project at <span>TH Deggendorf</span> benchmarking the trade-off between privacy preservation and utility in person re-identification systems. Uses the Market-1501 dataset with various anonymization techniques to measure their impact on ReID accuracy.`,-->
+<!--    features:["Benchmarks multiple anonymization methods: blurring, pixelation, silhouette extraction","Evaluates privacy-utility trade-off using standard ReID metrics (mAP, Rank-1)","Built on PyTorch with GPU compute via university cluster","Supervised by Robert Aufschläger at TH Deggendorf","Contributes to responsible AI and privacy-aware computer vision research"],-->
+<!--    github:"https://github.com/JazibAslam124",demo:null-->
+<!--  },-->
+<!--  slides:{-->
+<!--    title:"AI Slides Generator",-->
+<!--    date:"Dec 2025 · n8n · Automation",-->
+<!--    tags:['<span class="tag tag-blue">N8N</span>','<span class="tag tag-green">GEMINI</span>','<span class="tag tag-purple">GOOGLE SLIDES API</span>','<span class="tag tag-orange">UNSPLASH</span>'],-->
+<!--    desc:`An n8n automation workflow built during a university hackathon that generates complete <span>Google Slides presentations from a single chat prompt</span>. Gemini AI writes the content, Unsplash provides images, and the Google Slides API assembles everything automatically.`,-->
+<!--    features:["Type a topic → get a fully structured Google Slides presentation","Gemini AI generates slide titles, bullet points, and speaker notes","Unsplash API fetches relevant high-quality images per slide","Google Slides API assembles and formats the final deck automatically","Built end-to-end in a single hackathon session using n8n visual workflow"],-->
+<!--    github:"https://github.com/JazibAslam124",demo:null-->
+<!--  }-->
+<!--};-->
+
+<!--// ── Core routing ──────────────────────────────────────────────-->
+<!--// Hash scheme:-->
+<!--//   #home | #about | #skills | #projects | #articles | #contact-->
+<!--//   #project/fraud | #project/taskapi | etc.-->
+
+<!--let current = 'home';-->
+
+<!--function showPage(pageId) {-->
+<!--  if (pageId === current) return;-->
+<!--  document.getElementById('page-' + current).classList.remove('active');-->
+<!--  const el = document.getElementById('page-' + pageId);-->
+<!--  if (!el) return;-->
+<!--  el.scrollTop = 0;-->
+<!--  el.classList.add('active');-->
+<!--  el.querySelectorAll('.stagger').forEach(s => s.classList.add('animate'));-->
+<!--  // Highlight nav — project detail keeps "projects" active-->
+<!--  const navTarget = pageId === 'project-detail' ? 'projects' : pageId;-->
+<!--  document.querySelectorAll('.nav-link').forEach(l => {-->
+<!--    l.classList.toggle('active', l.dataset.page === navTarget);-->
+<!--  });-->
+<!--  current = pageId;-->
+<!--}-->
+
+<!--function navigate(id) {-->
+<!--  // Update hash then show page.-->
+<!--  // For "project-detail" the hash is set by openProject(), so just show here.-->
+<!--  if (id !== 'project-detail') {-->
+<!--    window.location.hash = id === 'home' ? '' : id;-->
+<!--  }-->
+<!--  showPage(id);-->
+<!--}-->
+
+<!--function openProject(id) {-->
+<!--  const p = projects[id];-->
+<!--  if (!p) return;-->
+<!--  const demoBtn = p.demo-->
+<!--    ? `<a href="${p.demo}" target="_blank" class="detail-btn-demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo</a>`-->
+<!--    : `<span class="detail-btn-demo" style="opacity:.4;cursor:default">Live Demo (coming soon)</span>`;-->
+<!--  const screenshotHtml = p.video-->
+<!--    ? `<div class="detail-screenshot"><video src="${p.video}" controls autoplay muted loop style="width:100%;display:block;"></video></div>`-->
+<!--    : p.screenshot-->
+<!--    ? `<div class="detail-screenshot"><img src="${p.screenshot}" alt="${p.title} screenshot"/></div>`-->
+<!--    : `<div class="detail-screenshot-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1a2535" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Add a screenshot — drop an image here</span></div>`;-->
+<!--  document.getElementById('detail-content').innerHTML = `-->
+<!--    <div class="page-eyebrow">Project</div>-->
+<!--    <h1 class="page-title" style="margin-bottom:1rem;">${p.title}</h1>-->
+<!--    <div class="detail-date">${p.date}</div>-->
+<!--    <div class="detail-tags-row">${p.tags.join('')}</div>-->
+<!--    <p class="detail-desc">${p.desc}</p>-->
+<!--    ${screenshotHtml}-->
+<!--    <div class="detail-features"><h3>Key Features</h3><ul>${p.features.map(f=>`<li>${f}</li>`).join('')}</ul></div>-->
+<!--    <div class="detail-btns">-->
+<!--      ${demoBtn}-->
+<!--      <a href="${p.github}" target="_blank" class="detail-btn-code"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Source Code</a>-->
+<!--    </div>`;-->
+<!--  // Set shareable URL for this specific project-->
+<!--  window.location.hash = 'project/' + id;-->
+<!--  showPage('project-detail');-->
+<!--}-->
+
+<!--// ── Read hash and route on load / back/forward ────────────────-->
+<!--function handleHash() {-->
+<!--  const hash = window.location.hash.replace('#', '').trim();-->
+<!--  if (!hash || hash === 'home') {-->
+<!--    showPage('home');-->
+<!--  } else if (hash.startsWith('project/')) {-->
+<!--    const projId = hash.split('/')[1];-->
+<!--    if (projects[projId]) {-->
+<!--      // Populate detail without triggering another hash change-->
+<!--      openProject(projId);-->
+<!--    } else {-->
+<!--      showPage('projects');-->
+<!--    }-->
+<!--  } else {-->
+<!--    const valid = ['about','skills','projects','articles','contact'];-->
+<!--    showPage(valid.includes(hash) ? hash : 'home');-->
+<!--  }-->
+<!--}-->
+
+<!--window.addEventListener('hashchange', handleHash);-->
+
+<!--// Wire nav buttons-->
+<!--document.querySelectorAll('.nav-link[data-page]').forEach(btn => {-->
+<!--  btn.addEventListener('click', () => navigate(btn.dataset.page));-->
+<!--});-->
+
+<!--// Expose globals used by inline onclick attributes-->
+<!--window.navigate = navigate;-->
+<!--window.openProject = openProject;-->
+
+<!--// Initial load-->
+<!--handleHash();-->
+<!--setTimeout(() => {-->
+<!--  document.querySelectorAll('#page-home .stagger').forEach(el => el.classList.add('animate'));-->
+<!--}, 300);-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -960,7 +1579,7 @@ footer.page-footer{margin-top:4rem;border-top:1px solid var(--border);padding-to
     <div class="about-stats">
       <div class="stat-card"><div class="stat-num">AI</div><div class="stat-label">Major Focus</div></div>
       <div class="stat-card"><div class="stat-num">BS</div><div class="stat-label">Degree</div></div>
-      <div class="stat-card"><div class="stat-num">7+</div><div class="stat-label">Projects</div></div>
+      <div class="stat-card"><div class="stat-num">9+</div><div class="stat-label">Projects</div></div>
       <div class="stat-card"><div class="stat-num">01</div><div class="stat-label">Mission</div></div>
     </div>
   </div>
@@ -992,6 +1611,8 @@ footer.page-footer{margin-top:4rem;border-top:1px solid var(--border);padding-to
         <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">SQLAlchemy &amp; Pydantic</span></div>
         <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">Streamlit &amp; Plotly</span></div>
         <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">PyTorch &amp; OpenCV</span></div>
+        <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">Telegram Bot API</span></div>
+        <div class="skill-pill"><div class="skill-dot purple"></div><span class="skill-name">Railway &amp; CI/CD Deployment</span></div>
       </div>
     </div>
   </div>
@@ -1029,6 +1650,8 @@ footer.page-footer{margin-top:4rem;border-top:1px solid var(--border);padding-to
   </div>
   <div class="proj-section-label">What I have been working on <span>⚡</span></div>
   <div class="project-list stagger">
+    <div class="project-row" onclick="openProject('voice')"><div class="proj-thumb">🎙️</div><div class="proj-info"><div class="proj-title">Multimodal AI Voice Companion</div><div class="proj-desc">AI assistant with a custom personality — combines Whisper STT, Azure TTS, Groq Vision, and a RAG memory system so it remembers you across conversations.</div><div class="proj-tags"><span class="tag tag-blue">WHISPER STT</span><span class="tag tag-green">AZURE TTS</span><span class="tag tag-purple">GROQ VISION</span><span class="tag tag-orange">CHROMADB</span><span class="tag tag-cyan">RAG</span></div></div><span class="proj-arrow">→</span></div>
+    <div class="project-row" onclick="openProject('german')"><div class="proj-thumb">🇩🇪</div><div class="proj-info"><div class="proj-title">German Interview Practice Bot</div><div class="proj-desc">Telegram bot for German job interview prep — speaks questions aloud, listens to your voice answers, and tracks your recurring grammar mistakes across sessions.</div><div class="proj-tags"><span class="tag tag-blue">TELEGRAM BOT</span><span class="tag tag-green">GROQ LLM</span><span class="tag tag-purple">WHISPER STT</span><span class="tag tag-orange">EDGE-TTS</span><span class="tag tag-cyan">RAILWAY</span></div></div><span class="proj-arrow">→</span></div>
     <div class="project-row" onclick="openProject('fraud')"><div class="proj-thumb">🔍</div><div class="proj-info"><div class="proj-title">Insurance Claim Fraud Detector</div><div class="proj-desc">End-to-end ML system — Random Forest scores insurance claims and automatically triggers Camunda BPMN workflows routing to Reject, Manual Review, or Approve.</div><div class="proj-tags"><span class="tag tag-red">RANDOM FOREST</span><span class="tag tag-blue">CAMUNDA</span><span class="tag tag-green">FASTAPI</span><span class="tag tag-orange">SKLEARN</span><span class="tag tag-purple">BPMN</span></div></div><span class="proj-arrow">→</span></div>
     <div class="project-row" onclick="openProject('taskapi')"><div class="proj-thumb">⚡</div><div class="proj-info"><div class="proj-title">Task Manager REST API</div><div class="proj-desc">RESTful CRUD API built with FastAPI, SQLAlchemy and SQLite — create, read, update and delete tasks with auto-generated interactive Swagger docs.</div><div class="proj-tags"><span class="tag tag-green">FASTAPI</span><span class="tag tag-blue">SQLALCHEMY</span><span class="tag tag-purple">SQLITE</span><span class="tag tag-orange">PYTHON</span><span class="tag tag-cyan">REST API</span></div></div><span class="proj-arrow">→</span></div>
     <div class="project-row" onclick="openProject('sales')"><div class="proj-thumb">📊</div><div class="proj-info"><div class="proj-title">Sales Analytics Dashboard</div><div class="proj-desc">Interactive sales dashboard powered by SQL queries on the Superstore dataset — live KPI cards, monthly trends, regional breakdowns and category filters.</div><div class="proj-tags"><span class="tag tag-purple">SQL</span><span class="tag tag-blue">SQLITE</span><span class="tag tag-cyan">STREAMLIT</span><span class="tag tag-orange">PLOTLY</span><span class="tag tag-green">PYTHON</span></div></div><span class="proj-arrow">→</span></div>
@@ -1097,6 +1720,42 @@ document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style
 
 // ── Project data ──────────────────────────────────────────────
 const projects={
+  german:{
+    title:"German Interview Practice Bot",
+    date:"2026 · Python · Telegram · Groq · Railway",
+    tags:['<span class="tag tag-blue">TELEGRAM BOT API</span>','<span class="tag tag-green">GROQ LLAMA-3.3-70B</span>','<span class="tag tag-purple">WHISPER STT</span>','<span class="tag tag-orange">EDGE-TTS</span>','<span class="tag tag-cyan">RAILWAY</span>','<span class="tag tag-red">PYTHON</span>'],
+    desc:`A <span>Telegram bot</span> that simulates real German job interviews — it asks questions aloud using <span>edge-tts (de-DE-KatjaNeural)</span> for correct German pronunciation, listens to your spoken answers via <span>Groq Whisper STT</span>, and tracks your grammar mistakes and weak topics across sessions without any extra API calls.`,
+    features:[
+      "Practice German interviews entirely by voice — speak your answers, hear the questions",
+      "edge-tts with de-DE-KatjaNeural voice for natural, correctly-pronounced German output — free, no API key",
+      "Groq Whisper STT transcribes spoken German answers in real time",
+      "Groq llama-3.3-70b evaluates answers, gives feedback, and adapts follow-up questions",
+      "Rule-based memory system tracks recurring grammar errors and weak interview topics across sessions",
+      "Memory runs without extra API calls — lightweight and efficient",
+      "Deployed on Railway with automatic CI/CD from GitHub — push to deploy"
+    ],
+    github:"https://github.com/JazibAslam124/German-bot",
+    demo:null
+  },
+  voice:{
+    title:"Multimodal AI Voice Companion",
+    date:"2026 · Python · Groq · Azure · Whisper · ChromaDB",
+    tags:['<span class="tag tag-blue">WHISPER STT</span>','<span class="tag tag-green">AZURE TTS</span>','<span class="tag tag-purple">GROQ VISION API</span>','<span class="tag tag-orange">CHROMADB</span>','<span class="tag tag-cyan">RAG</span>','<span class="tag tag-red">SENTENCE TRANSFORMERS</span>'],
+    desc:`A <span>multimodal AI voice companion</span> with a persistent personality defined via <span>personality.txt</span> — it knows who you are, remembers past conversations, can see through a camera, and speaks back in a natural voice. Started with local models, migrated to APIs for better performance without high VRAM demands.`,
+    features:[
+      "Custom personality loaded from personality.txt — personal facts, tone, and conversational style baked in",
+      "Whisper STT for accurate offline-capable speech recognition",
+      "Azure Cognitive Services TTS for natural-sounding voice responses",
+      "Groq Vision API for real-time image and camera understanding",
+      "RAG architecture with ChromaDB + Sentence Transformers for long-term semantic memory",
+      "Remembers facts about you across sessions — contextual, not stateless",
+      "Multi-service orchestration: Groq LLM, Azure TTS, Whisper STT, OpenRouter, local vector DB",
+      "Migrated from local models to API backends for better throughput without VRAM limits"
+    ],
+    github:"https://github.com/JazibAslam124/Multimodal_AI_Voice_Companion",
+    demo:null,
+    youtube:"qu4GE4dliJ4"
+  },
   fraud:{
     title:"Insurance Claim Fraud Detector",
     date:"Apr 2026 · scikit-learn · FastAPI · Camunda",
@@ -1197,7 +1856,17 @@ function openProject(id) {
   const demoBtn = p.demo
     ? `<a href="${p.demo}" target="_blank" class="detail-btn-demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live Demo</a>`
     : `<span class="detail-btn-demo" style="opacity:.4;cursor:default">Live Demo (coming soon)</span>`;
-  const screenshotHtml = p.video
+  const screenshotHtml = p.youtube
+    ? `<div class="detail-screenshot" style="position:relative;cursor:pointer;" onclick="window.open('https://www.youtube.com/watch?v=${p.youtube}','_blank')">
+        <img src="https://img.youtube.com/vi/${p.youtube}/maxresdefault.jpg" alt="Demo video" style="width:100%;display:block;"/>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);transition:background .2s;" onmouseover="this.style.background='rgba(0,0,0,.5)'" onmouseout="this.style.background='rgba(0,0,0,.35)'">
+          <div style="width:68px;height:68px;background:rgba(0,212,255,.15);border:2px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+        </div>
+        <div style="position:absolute;bottom:12px;right:14px;font-family:var(--font-mono);font-size:.6rem;color:rgba(255,255,255,.5);letter-spacing:.08em;">OPENS ON YOUTUBE</div>
+      </div>`
+    : p.video
     ? `<div class="detail-screenshot"><video src="${p.video}" controls autoplay muted loop style="width:100%;display:block;"></video></div>`
     : p.screenshot
     ? `<div class="detail-screenshot"><img src="${p.screenshot}" alt="${p.title} screenshot"/></div>`
